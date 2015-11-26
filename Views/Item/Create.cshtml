@@ -1,0 +1,24 @@
+﻿@model ToDoList04.Models.Item
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.LabelFor(model => model.description)
+        @Html.EditorFor(model => model.description)
+        <input type="submit" value="Create" class="btn btn-default" />
+    }
+    <div> 
+    </div>
+</body>
+</html>
